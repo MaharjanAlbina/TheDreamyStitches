@@ -3,116 +3,96 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f1f1; /* Light pastel pink */
     color: #333;
-    background-color: #f9f1f1; /* Soft pastel pink */
 }
 
-/* Navigation */
-header {
-    background-color: #fff;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-}
-
-header .container {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+}
+
+/* Header Styles */
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo {
     font-size: 24px;
     font-weight: 600;
+    color: #333;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li a {
-    color: #333;
     text-decoration: none;
+    color: #333;
     font-weight: 400;
+    font-size: 14px;
+}
+
+header .icons a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    margin-left: 15px;
 }
 
 /* Hero Section */
 #hero {
-    height: 100vh;
-    background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Teenage pastel gradient */
-    color: #fff;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Pastel gradient */
+    height: 400px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: #fff;
 }
 
 #hero h1 {
     font-size: 50px;
     margin-bottom: 10px;
-    font-weight: 600;
 }
 
 #hero p {
     font-size: 18px;
-    margin-bottom: 20px;
-}
-
-#hero .btn {
-    background-color: #ff6347;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-/* Pop-up Section */
-.popup {
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 400px;
-    margin: 30px auto;
-}
-
-.popup h2 {
-    color: #ff6347;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.popup form input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.popup form button {
-    background-color: #ff6347;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* Footer */
 footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 10px 0;
 }
 
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+}
 
-background: url('hero-image.jpg') no-repeat center center/cover;
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-wrap: wrap;
+    }
+    .icons {
+        display: none;
+    }
+}
