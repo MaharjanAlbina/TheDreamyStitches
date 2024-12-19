@@ -125,13 +125,6 @@ header nav ul li a {
 }
 
 /* Footer Styles */
-footer {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-}
-
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -165,39 +158,32 @@ footer {
     font-size: 14px;
 }
 
-.footer-column input {
-    width: calc(100% - 50px);
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.footer-column button {
-    padding: 5px 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
+/* Social Icons */
 .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .social-icons a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-size: 18px;
-    margin-right: 10px;
+    font-size: 14px;
     color: #333;
+    gap: 10px;
 }
 
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer Note */
 .footer-note {
     text-align: center;
     margin-top: 20px;
     font-size: 12px;
     color: #666;
 }
-
