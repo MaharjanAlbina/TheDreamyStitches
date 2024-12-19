@@ -33,13 +33,14 @@
     gap: 10px;
 }
 
-.header-background .logo span {
+.header-background .logo .highlight {
     color: transparent;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background: linear-gradient(45deg, #ff66b2, #ff85c2, #ff99cc); /* Slightly darker and brighter pink gradient */
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 50px;
 }
+
 
 /* Emoji Styling */
 .header-background .logo span,
