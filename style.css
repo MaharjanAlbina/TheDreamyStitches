@@ -13,19 +13,19 @@ body {
     height: 200px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    position: relative;
+    justify-content: center;
+    text-align: center;
 }
 
 .header-background .logo {
-    font-size: 36px;
-    font-weight: 600;
-    color: black; /* Set text color to black */
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    font-size: 40px; /* Adjust font size as needed */
+    font-weight: 700; /* Bold font */
+    font-family: 'Poppins', sans-serif; /* Straight, clean font */
+    color: black; /* Set text color */
+    text-transform: uppercase; /* Capitalize the text */
+    margin: 0;
 }
+
 
 /* Navigation Styles */
 header nav {
