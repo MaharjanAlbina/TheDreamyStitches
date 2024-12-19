@@ -72,36 +72,34 @@ header nav ul li a {
     font-family: 'Poppins', sans-serif; /* Straight and clean font */
 }
 
-
-/* Icons on the Right */
+/* Icons on the Top-Right */
 .icons {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px; /* Adjust vertical position */
+    right: 20px; /* Adjust horizontal position */
     display: flex;
     align-items: center;
-    gap: 25px; /* Spacing between each icon block */
+    gap: 15px; /* Add spacing between icons */
 }
 
 .icons a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Set text color to white */
-    font-size: 14px; /* Set font size for labels */
+    text-decoration: none;
+    color: black; /* Use a dark color for the text */
+    font-size: 14px; /* Adjust label font size */
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack icon and label vertically */
+    flex-direction: column; /* Stack the icon and label vertically */
     align-items: center;
-    gap: 5px; /* Spacing between icon and label */
+    gap: 3px; /* Space between icon and label */
 }
 
 .icons .icon {
-    font-size: 24px; /* Larger size for the icon */
+    font-size: 18px; /* Adjust icon size */
 }
 
 .icons .label {
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    font-weight: 500; /* Medium font weight for the labels */
+    font-weight: 500; /* Medium weight for labels */
 }
 
 
