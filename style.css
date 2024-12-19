@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #000; /* Set default text color to black */
+    color: #000; /* Default text color set to black */
 }
 
 /* Header Section */
@@ -13,24 +13,30 @@ body {
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: black; /* Set text color to black */
-    text-align: center;
+    padding: 0 20px;
+    position: relative;
 }
 
 .header-background .logo {
     font-size: 36px;
     font-weight: 600;
     color: black; /* Set text color to black */
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Navigation Styles */
+header nav {
+    margin: auto; /* Center navigation */
+}
+
 header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-top: 10px;
     padding: 0;
 }
 
@@ -38,7 +44,15 @@ header nav ul li a {
     text-decoration: none;
     color: black; /* Set text color to black */
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+/* Icons on Right */
+header .icons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 header .icons a {
