@@ -73,20 +73,37 @@ header nav ul li a {
 }
 
 
-/* Icons on Right */
-header .icons {
+/* Icons on the Right */
+.icons {
     position: absolute;
+    top: 20px;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Spacing between each icon block */
 }
 
-header .icons a {
-    text-decoration: none;
-    font-size: 18px;
-    color: black; /* Set text color to black */
-    margin-left: 15px;
+.icons a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+    font-size: 14px; /* Set font size for labels */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack icon and label vertically */
+    align-items: center;
+    gap: 5px; /* Spacing between icon and label */
 }
+
+.icons .icon {
+    font-size: 24px; /* Larger size for the icon */
+}
+
+.icons .label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500; /* Medium font weight for the labels */
+}
+
 
 /* Hero Section */
 #hero {
