@@ -1,8 +1,11 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
+/* Glittery Highlight Effect */
+@keyframes glitter {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 /* Header Section */
@@ -10,16 +13,15 @@ body {
     background: url("images/a.png") no-repeat center center/cover;
     height: 200px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .header-background .logo {
-    font-size: 48px;
-    font-weight: 700;
-    font-family: 'Dancing Script', cursive;
+    font-size: 48px; /* Bigger font size for the logo */
+    font-weight: 700; /* Bold font */
+    font-family: 'Dancing Script', cursive; /* Cursive font */
     color: transparent;
     background: linear-gradient(to right, #ff7eb3, #ffc3a0, #ffc3a0, #ff7eb3);
     -webkit-background-clip: text;
@@ -27,118 +29,107 @@ body {
     animation: glitter 3s linear infinite;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
 .header-background .logo .highlight {
-    background: linear-gradient(45deg, #ff66b2, #ff85c2, #ff99cc);
+    color: transparent;
+    background: linear-gradient(45deg, #ff66b2, #ff85c2, #ff99cc); /* Slightly darker and brighter pink gradient */
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
     font-size: 50px;
 }
 
-nav {
-    margin: 20px 0;
+
+/* Emoji Styling */
+.header-background .logo span,
+.header-background .logo {
+    display: inline-block;
+    margin: 0 5px;
 }
 
-nav ul {
+
+/* Navigation Styles */
+header nav {
+    margin: auto; /* Center navigation */
+}
+
+/* Navigation Styles */
+header nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px; /* Add spacing between items */
     justify-content: center;
     padding: 0;
     margin: 0;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    font-size: 16px;
+    color: black; /* Keep text color black */
+    font-weight: 600; /* Make the font slightly bolder */
+    font-size: 18px; /* Increase font size */
+    font-family: 'Poppins', sans-serif; /* Straight and clean font */
 }
 
-/* Icons on Top-Right */
+/* Icons on the Top-Right */
 .icons {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px; /* Adjust vertical position */
+    right: 20px; /* Adjust horizontal position */
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 15px; /* Add spacing between icons */
 }
 
 .icons a {
     text-decoration: none;
-    color: #333;
+    color: black; /* Use a dark color for the text */
+    font-size: 14px; /* Adjust label font size */
+    text-align: center;
     display: flex;
+    flex-direction: column; /* Stack the icon and label vertically */
     align-items: center;
-    gap: 5px;
-    font-size: 14px;
+    gap: 3px; /* Space between icon and label */
 }
 
 .icons .icon {
-    font-size: 18px;
+    font-size: 18px; /* Adjust icon size */
 }
+
+.icons .label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Medium weight for labels */
+}
+
 
 /* Hero Section */
 #hero {
     background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-    color: #000;
-    padding: 20px;
+    color: #000; /* Set text color to black */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 #hero h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
 #hero p {
     font-size: 18px;
-    margin-bottom: 20px;
 }
 
-.category-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.category-card {
-    width: calc(25% - 20px);
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.category-card:hover {
-    transform: scale(1.05);
-}
-
-.category-card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #eee;
-}
-
-.category-card p {
-    padding: 10px 0;
-    font-weight: 600;
-    color: #555;
-}
-
-/* Footer Section */
+/* Footer Styles */
 .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
-    background: #f9f9f9;
     gap: 20px;
 }
 
@@ -151,58 +142,245 @@ nav ul li a {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-size: 16px;
 }
 
 .footer-column ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .footer-column ul li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .footer-column ul li a {
     text-decoration: none;
-    color: #666;
+    color: #333;
     font-size: 14px;
 }
 
+/* Social Icons */
 .social-icons {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .social-icons a {
-    text-decoration: none;
-    color: #333;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
     gap: 10px;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+    width: 24px; /* Set the desired width */
+    height: 24px; /* Set the desired height */
+    object-fit: cover; /* Ensure the images are cropped properly if needed */
+    border-radius: 50%; /* Optional: Makes the icons circular */
 }
 
+
+/* Footer Note */
 .footer-note {
     text-align: center;
+    margin-top: 20px;
     font-size: 12px;
     color: #666;
-    margin-top: 20px;
+}
+/* Glittery Highlight Effect */
+@keyframes glitter {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .category-card {
-        width: calc(50% - 20px);
-    }
-    .footer-column {
-        flex: 1 1 100%;
-    }
+/* Header Section */
+.header-background {
+    background: url("images/a.png") no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-background .logo {
+    font-size: 48px; /* Bigger font size for the logo */
+    font-weight: 700; /* Bold font */
+    font-family: 'Dancing Script', cursive; /* Cursive font */
+    color: transparent;
+    background: linear-gradient(to right, #ff7eb3, #ffc3a0, #ffc3a0, #ff7eb3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: glitter 3s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-background .logo .highlight {
+    color: transparent;
+    background: linear-gradient(45deg, #ff66b2, #ff85c2, #ff99cc); /* Slightly darker and brighter pink gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 50px;
+}
+
+
+/* Emoji Styling */
+.header-background .logo span,
+.header-background .logo {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+/* Navigation Styles */
+header nav {
+    margin: auto; /* Center navigation */
+}
+
+/* Navigation Styles */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Add spacing between items */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black; /* Keep text color black */
+    font-weight: 600; /* Make the font slightly bolder */
+    font-size: 18px; /* Increase font size */
+    font-family: 'Poppins', sans-serif; /* Straight and clean font */
+}
+
+/* Icons on the Top-Right */
+.icons {
+    position: absolute;
+    top: 10px; /* Adjust vertical position */
+    right: 20px; /* Adjust horizontal position */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Add spacing between icons */
+}
+
+.icons a {
+    text-decoration: none;
+    color: black; /* Use a dark color for the text */
+    font-size: 14px; /* Adjust label font size */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack the icon and label vertically */
+    align-items: center;
+    gap: 3px; /* Space between icon and label */
+}
+
+.icons .icon {
+    font-size: 18px; /* Adjust icon size */
+}
+
+.icons .label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Medium weight for labels */
+}
+
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    color: #000; /* Set text color to black */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+/* Footer Styles */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 24px; /* Set the desired width */
+    height: 24px; /* Set the desired height */
+    object-fit: cover; /* Ensure the images are cropped properly if needed */
+    border-radius: 50%; /* Optional: Makes the icons circular */
+}
+
+
+/* Footer Note */
+.footer-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
 }
