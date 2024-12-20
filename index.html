@@ -4,112 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dreamy Stitches</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header img {
+            max-width: 120px;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #f68ba5;
+            font-weight: bold;
+        }
+        .banner {
+            margin-top: 10px;
+        }
+        .banner img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .category-card {
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .category-card p {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 8px;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .footer a:hover {
+            color: #f68ba5;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header-background">
-        <div class="container">
-            <div class="logo">
-                🦋 <span class="highlight">The Dreamy Stitches</span> 🦋
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#new">New</a></li>
-                    <li><a href="#bestsellers">Best Sellers</a></li>
-                    <li><a href="#clothing">Clothing</a></li>
-                    <li><a href="#tops">Tops</a></li>
-                    <li><a href="#bottoms">Bottoms</a></li>
-                    <li><a href="#accessories">Accessories</a></li>
-                    <li><a href="#Home decor">Home decor</a></li>
-                    <li><a href="#Toys & Gifts">Toys & Gifts</a></li>
-                    <li><a href="#Teens">Teens</a></li>
-                    <li><a href="#sale">Sale</a></li>
-                </ul>
-            </nav>
-            <div class="icons">
-                <a href="#search">
-                    <span class="icon">🔍</span>
-                    <span class="label">Search</span>
-                </a>
-                <a href="#account">
-                    <span class="icon">👤</span>
-                    <span class="label">Account</span>
-                </a>
-                <a href="#wishlist">
-                    <span class="icon">❤️</span>
-                    <span class="label">Wishlist</span>
-                </a>
-                <a href="#cart">
-                    <span class="icon">🛒</span>
-                    <span class="label">Cart</span>
-                </a>
-            </div>         
-    </header>
-    
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Sand to Spritz</h1>
-            <p>Explore our latest collection with a touch of elegance and bold designs.</p>
-        </div>
-    </section>
+    <!-- Header -->
+    <div class="header">
+        <img src="logo.png" alt="The Dreamy Stitches Logo">
+        <h1>The Dreamy Stitches</h1>
+    </div>
 
-<!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-column">
-            <h4>CUSTOMER CARE</h4>
-            <ul>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#delivery">Delivery</a></li>
-                <li><a href="#returns">Returns</a></li>
-                <li><a href="#faqs">FAQs</a></li>
-                <li><a href="#phone-orders">Phone Orders</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>IMPORTANT INFO</h4>
-            <ul>
-                <li><a href="#terms">Terms & Conditions</a></li>
-                <li><a href="#collection-statement">Collection Statement</a></li>
-                <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#cookies">Cookies Policy</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>MORE</h4>
-            <ul>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#boutiques">Boutiques</a></li>
-                <li><a href="#foundation">Katalyst Foundation</a></li>
-                <li><a href="#update">Updates</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>CONNECT WITH US</h4>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/dreamy_stitches_?igsh=cGVwYnM3YWxvN2J4" target="_blank">
-                    <img src="images/i.jpeg" alt="Instagram" style="width: 20px; height: 20px;">
-                    Instagram
-                </a>
-                <a href="https://www.tiktok.com" target="_blank">
-                    <img src="images/t.jpeg" alt="TikTok" style="width: 20px; height: 20px;">
-                    TikTok
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="images/f.jpeg" alt="Facebook" style="width: 20px; height: 20px;">
-                    Facebook
-                </a>
+    <!-- Banner -->
+    <div class="container-fluid banner">
+        <img src="banner.jpg" class="img-fluid" alt="Banner">
+    </div>
+
+    <!-- Categories Section -->
+    <div class="container my-4">
+        <h3 class="text-center">Shop By Category</h3>
+        <div class="row g-3">
+            <div class="col-6 col-md-3">
+                <div class="category-card">
+                    <img src="dress.jpg" alt="Dress">
+                    <p>Dress</p>
+                </div>
             </div>
-            
-            <p>Join our members list to receive the latest access to new arrivals, VIP events, and sale previews.</p>
-            <input type="email" placeholder="Email address...">
-            <button>→</button>
+            <div class="col-6 col-md-3">
+                <div class="category-card">
+                    <img src="tops.jpg" alt="Tops">
+                    <p>Tops</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card">
+                    <img src="bottoms.jpg" alt="Bottoms">
+                    <p>Bottoms</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card">
+                    <img src="jackets.jpg" alt="Jackets">
+                    <p>Jackets</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card">
+                    <img src="sweaters.jpg" alt="Sweaters">
+                    <p>Sweaters</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card">
+                    <img src="shoes.jpg" alt="Shoes">
+                    <p>Shoes</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card">
+                    <img src="accessories.jpg" alt="Accessories">
+                    <p>Accessories</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card">
+                    <img src="sale.jpg" alt="Sale">
+                    <p>Sale</p>
+                </div>
+            </div>
         </div>
     </div>
-    <p class="footer-note">© 2024 The Dreamy Stitches. All rights reserved.</p>
-</footer>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 The Dreamy Stitches. All rights reserved.</p>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+    </div>
+
+</body>
+</html>
