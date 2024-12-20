@@ -8,15 +8,64 @@ body {
 
 /* Header Section */
 .header-background {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
     background: linear-gradient(to right, #ffe0f0, #ffd9e8);
 }
 
 .header-background .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 36px;
+    font-size: 48px;
     color: #ff69b4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-background nav {
+    margin-top: 20px;
+}
+
+.header-background nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-background nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Icons on the Top-Right */
+.icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons .icon {
+    font-size: 18px;
 }
 
 /* Hero Section */
@@ -29,86 +78,7 @@ body {
     margin-bottom: 30px;
 }
 
-.hero-content h1 {
-    font-size: 48px;
-    color: #ff69b4;
-}
-
 .hero-content p {
     font-size: 18px;
     color: #555;
-}
-
-/* Categories Section */
-.hero-categories {
-    margin: 20px auto;
-    text-align: center;
-}
-
-.hero-categories .section-title {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.hero-categories .category-row {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.hero-categories .category-card {
-    width: 150px;
-    text-align: center;
-}
-
-.hero-categories .category-card img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-}
-
-.hero-categories .category-card p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-}
-
-/* Footer Section */
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px;
-    background: #f8f9fa;
-}
-
-.footer-column {
-    text-align: left;
-}
-
-.footer-column h4 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li a {
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-}
-
-.footer-note {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #777;
 }
