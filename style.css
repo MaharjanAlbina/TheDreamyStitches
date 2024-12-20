@@ -135,7 +135,7 @@ body {
 
 .category-card:hover {
     transform: scale(1.05);
-    background-color: #ff69b4; /* Bright pink hover effect */
+    background-color: #fa62ae; /* Bright pink hover effect */
     color: #fff;
 }
 
