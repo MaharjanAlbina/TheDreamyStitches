@@ -16,7 +16,7 @@ body {
 
 /* Logo Styles */
 .logo-container {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lucida Handwriting', cursive;
     font-size: 36px;
     color: #ff69b4;
     text-align: center;
@@ -148,7 +148,6 @@ body {
 }
 
 .footer-column h4 {
-    font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 16px;
