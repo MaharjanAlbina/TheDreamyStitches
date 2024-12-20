@@ -10,10 +10,8 @@ body {
 .header-background {
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
+    padding: 20px 0;
+    text-align: center;
 }
 
 /* Logo Styles */
@@ -22,8 +20,10 @@ body {
     font-size: 36px;
     color: #ff69b4;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 10px; /* Space between logo and menu */
 }
 
 /* Navigation Menu */
@@ -31,10 +31,9 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin: 0;
+    gap: 30px;
     padding: 0;
-    flex: 1;
+    margin: 0;
 }
 
 .nav-links li a {
@@ -52,6 +51,9 @@ body {
 
 /* Icons Section */
 .icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -69,14 +71,6 @@ body {
 
 .icons .icon {
     font-size: 20px;
-}
-
-/* Header Layout Adjustments */
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
 }
 
 
