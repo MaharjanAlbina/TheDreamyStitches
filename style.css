@@ -3,12 +3,12 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #ffffff0e;
 }
 
 /* Header Section */
 .header-background {
-    background-color: #ffffff;
+    background-color: #ffffff0e;
     border-bottom: 1px solid #ddd;
     padding: 20px 0;
     text-align: center;
