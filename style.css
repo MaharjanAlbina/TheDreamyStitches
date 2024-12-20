@@ -14,13 +14,24 @@ body {
     text-align: center;
 }
 
+/* Logo Styles */
 .logo-container {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
     color: #ff69b4;
     text-align: center;
-    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
+.logo-container .highlight {
+    color: #ff69b4;
+    font-size: 36px;
+}
+
 
 .nav-links {
     list-style: none;
