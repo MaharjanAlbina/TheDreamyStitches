@@ -80,12 +80,12 @@ body {
 /* Categories Section */
 #categories {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #fff;
+    padding: 20px 20px; /* Reduced top padding to minimize gap */
+    background-color: #ffe4e1; /* Light pink background */
 }
 
 .categories-header {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Slightly reduced bottom margin */
 }
 
 .categories-header p {
@@ -98,7 +98,7 @@ body {
 .section-title {
     font-size: 24px;
     color: #333;
-    margin-top: 10px; /* Add space between message and title */
+    margin-top: 5px; /* Reduced space between message and title */
 }
 
 .category-grid {
@@ -135,7 +135,7 @@ body {
 
 .category-card:hover {
     transform: scale(1.05);
-    background-color: #ff69b4;
+    background-color: #ff69b4; /* Bright pink hover effect */
     color: #fff;
 }
 
@@ -151,6 +151,7 @@ body {
         grid-template-columns: repeat(1, 1fr); /* One category per row on very small screens */
     }
 }
+
 
 
 /* Footer Section */
