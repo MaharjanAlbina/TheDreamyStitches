@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative; /* To position the icons absolutely */
 }
 
 /* Logo Styles */
@@ -14,8 +15,12 @@
     font-size: 30px; /* Adjusted font size */
     color: #ff69b4;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Navigation Menu */
@@ -23,7 +28,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px; /* Reduced gap */
+    gap: 30px;
     margin: 0;
     padding: 0;
     flex-grow: 1; /* Push the icons to the right */
@@ -33,7 +38,7 @@
 .nav-links li a {
     text-decoration: none;
     font-size: 14px; /* Slightly smaller font */
-    font-weight: 400;
+    font-weight: 400; /* Non-bold text */
     color: #333;
     text-transform: uppercase;
     transition: color 0.3s;
@@ -47,7 +52,10 @@
 .icons {
     display: flex;
     align-items: center;
-    gap: 15px; /* Reduce gap between icons */
+    gap: 15px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 .icons a {
@@ -63,6 +71,7 @@
 .icons .icon {
     font-size: 18px; /* Smaller icon size */
 }
+
 
 /* Hero Section */
 #hero {
