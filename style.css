@@ -80,12 +80,12 @@ body {
 /* Categories Section */
 #categories {
     text-align: center;
-    padding: 20px 20px; /* Reduced top padding to minimize gap */
-    background-color: #fae5fcbd; /* Light pink background */
+    padding: 30px 20px;
+    background-color: #fce4ec; /* Light pink background */
 }
 
 .categories-header {
-    margin-bottom: 15px; /* Slightly reduced bottom margin */
+    margin-bottom: 20px;
 }
 
 .categories-header p {
@@ -98,57 +98,65 @@ body {
 .section-title {
     font-size: 24px;
     color: #333;
-    margin-top: 5px; /* Reduced space between message and title */
+    margin-top: 5px;
 }
 
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four categories per row */
-    gap: 20px; /* Space between categories */
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    gap: 20px;
     justify-content: center;
     align-items: center;
     max-width: 1000px;
-    margin: 0 auto; /* Center the grid */
+    margin: 0 auto;
 }
 
 .category-card {
-    text-align: center;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    transition: transform 0.3s, background-color 0.3s;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .category-card img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.category-card p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #555;
-}
-
-.category-card:hover {
-    transform: scale(1.05);
-    background-color: #fa62ae; /* Bright pink hover effect */
+.category-card .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-card:hover .overlay {
+    opacity: 1;
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
 }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
     .category-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two categories per row on smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .category-grid {
-        grid-template-columns: repeat(1, 1fr); /* One category per row on very small screens */
+        grid-template-columns: 1fr; /* One card per row for very small screens */
     }
 }
 
