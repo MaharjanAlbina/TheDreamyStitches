@@ -1,109 +1,114 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
 }
 
-/* Header Styles */
-.header {
+/* Header Section */
+.header-background {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background: linear-gradient(to right, #ffe0f0, #ffd9e8);
 }
 
-.header img {
-    max-width: 120px;
-    margin-bottom: 10px;
-}
-
-.header h1 {
+.header-background .logo {
+    font-family: 'Dancing Script', cursive;
     font-size: 36px;
-    color: #f68ba5; /* Pastel pink */
-    font-weight: bold;
-    margin: 0;
+    color: #ff69b4;
 }
 
-/* Banner Styles */
-.banner img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Categories Section */
-.container h3 {
-    font-size: 28px;
-    font-weight: 600;
+/* Hero Section */
+#hero {
     text-align: center;
+    padding: 50px 0;
+}
+
+.hero-content {
     margin-bottom: 30px;
-    color: #333;
 }
 
-.category-card {
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+.hero-content h1 {
+    font-size: 48px;
+    color: #ff69b4;
 }
 
-.category-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.category-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.category-card p {
-    font-size: 16px;
-    font-weight: 600;
+.hero-content p {
+    font-size: 18px;
     color: #555;
 }
 
-/* Footer Styles */
-.footer {
+/* Categories Section */
+.hero-categories {
+    margin: 20px auto;
     text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-top: 1px solid #ddd;
 }
 
-.footer p {
-    margin: 10px 0;
+.hero-categories .section-title {
+    font-size: 24px;
     color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-categories .category-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-categories .category-card {
+    width: 150px;
+    text-align: center;
+}
+
+.hero-categories .category-card img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.hero-categories .category-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Footer Section */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background: #f8f9fa;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #555;
     font-size: 14px;
 }
 
-.footer a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.footer a:hover {
-    color: #f68ba5; /* Highlight pastel pink on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .category-card img {
-        height: auto;
-    }
-    .container h3 {
-        font-size: 24px;
-    }
-    .footer a {
-        display: block;
-        margin: 5px 0;
-    }
+.footer-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
 }
