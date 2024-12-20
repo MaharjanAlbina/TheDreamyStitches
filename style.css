@@ -1,71 +1,76 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 /* Header Section */
 .header-background {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff46; /* Set background color to white */
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.header-background .logo {
+.logo-container {
     font-family: 'Dancing Script', cursive;
-    font-size: 48px;
+    font-size: 36px;
     color: #ff69b4;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.header-background nav {
-    margin-top: 20px;
-}
-
-.header-background nav ul {
-    display: flex;
+.nav-links {
     list-style: none;
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     padding: 0;
     margin: 0;
 }
 
-.header-background nav ul li a {
+.nav-links li a {
     text-decoration: none;
-    color: black;
-    font-weight: 600;
     font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s;
 }
 
-/* Icons on the Top-Right */
+.nav-links li a:hover {
+    color: #ff69b4;
+}
+
+/* Icons */
 .icons {
     position: absolute;
     top: 20px;
     right: 20px;
     display: flex;
-    gap: 15px;
-    align-items: center;
+    gap: 20px;
 }
 
 .icons a {
     text-decoration: none;
-    color: black;
+    color: #333;
     font-size: 14px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
 }
 
 .icons .icon {
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.icons .label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 /* Hero Section */
