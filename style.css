@@ -1,26 +1,29 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
 /* Header Section */
 .header-background {
-    background-color: #ffffff0e;
+    background-color: #ffffff;
     border-bottom: 1px solid #ddd;
-    padding: 10px 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: relative; /* To position the icons absolutely */
+    align-items: center;
+    padding: 10px 30px;
 }
 
 /* Logo Styles */
 .logo-container {
     font-family: 'Lucida Handwriting', cursive;
-    font-size: 30px; /* Adjusted font size */
+    font-size: 36px;
     color: #ff69b4;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    gap: 10px;
 }
 
 /* Navigation Menu */
@@ -28,17 +31,16 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     margin: 0;
     padding: 0;
-    flex-grow: 1; /* Push the icons to the right */
-    text-align: center;
+    flex: 1;
 }
 
 .nav-links li a {
     text-decoration: none;
-    font-size: 14px; /* Slightly smaller font */
-    font-weight: 400; /* Non-bold text */
+    font-size: 14px;
+    font-weight: 400; /* Non-bold font */
     color: #333;
     text-transform: uppercase;
     transition: color 0.3s;
@@ -53,15 +55,12 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
 }
 
 .icons a {
     text-decoration: none;
     color: #333;
-    font-size: 12px; /* Adjusted label font size */
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +68,15 @@
 }
 
 .icons .icon {
-    font-size: 18px; /* Smaller icon size */
+    font-size: 20px;
+}
+
+/* Header Layout Adjustments */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 
