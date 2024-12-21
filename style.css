@@ -148,11 +148,13 @@ body {
     transition: opacity 0.3s ease; /* Smooth fade-in effect */
 }
 
-.category-card:hover p {
-    opacity: 1; /* Fully visible on hover */
+.category-card:hover p,
+.category-card.touched p {
+    opacity: 1; /* Fully visible on hover or touch */
 }
 
-.category-card:hover {
+.category-card:hover,
+.category-card.touched {
     transform: scale(1.05); /* Slightly enlarge the card */
 }
 
