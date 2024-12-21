@@ -10,27 +10,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Select all category cards and the popup
+    // Popup Functionality for Category Cards
     const categoryCards = document.querySelectorAll('.category-card');
     const popup = document.querySelector('.popup');
 
     categoryCards.forEach(card => {
         card.addEventListener('touchstart', () => {
-            // Get the category title from the touched card
             const categoryTitle = card.querySelector('.category-title').innerText;
-
-            // Update the popup content with the category title
-            if (popup) {
-                popup.querySelector('p').innerText = `You selected: ${categoryTitle}`;
-                popup.style.display = 'block'; // Show the popup
-            }
+            popup.querySelector('p').innerText = `You selected: ${categoryTitle}`;
+            popup.style.display = 'block';
         });
     });
 
-    // Close the popup when touching outside of it
     document.addEventListener('touchstart', (e) => {
         if (popup && !popup.contains(e.target) && !e.target.closest('.category-card')) {
-            popup.style.display = 'none'; // Hide the popup
+            popup.style.display = 'none';
         }
     });
 });
