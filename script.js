@@ -3,28 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('nav ul li a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
 
-    // Popup Functionality for Category Cards
+    // Function to handle category selection
+    const handleCategorySelection = (event) => {
+        const card = event.currentTarget;
+        const categoryTitle = card.querySelector('.category-title').innerText;
+        alert(`You selected: ${categoryTitle}`);
+    };
+
+    // Attach event listeners to category cards
     const categoryCards = document.querySelectorAll('.category-card');
-    const popup = document.querySelector('.popup');
-
     categoryCards.forEach(card => {
-        card.addEventListener('touchstart', () => {
-            const categoryTitle = card.querySelector('.category-title').innerText;
-            popup.querySelector('p').innerText = `You selected: ${categoryTitle}`;
-            popup.style.display = 'block';
-        });
-    });
-
-    document.addEventListener('touchstart', (e) => {
-        if (popup && !popup.contains(e.target) && !e.target.closest('.category-card')) {
-            popup.style.display = 'none';
-        }
+        card.addEventListener('click', handleCategorySelection);
+        card.addEventListener('touchstart', handleCategorySelection);
     });
 });
