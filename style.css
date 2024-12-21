@@ -130,7 +130,7 @@ body {
 
 /* Updated Category Title Styling */
 .category-title {
-    font-size: 32px; /* Increased font size for bigger text */
+    font-size: 22px; /* Increased font size for bigger text */
     font-weight: bold; /* Made the text bold */
     text-transform: uppercase; /* Converts text to uppercase */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better readability */
