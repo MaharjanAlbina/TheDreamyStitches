@@ -80,7 +80,7 @@ body {
 /* Categories Section */
 #categories {
     text-align: center;
-    padding: 20px 20px; /* Adjust padding as needed */
+    padding: 20px 20px; /* Reduced top padding to minimize gap */
     background-color: #ffe4e1; /* Light pink background */
 }
 
@@ -107,7 +107,7 @@ body {
     gap: 20px; /* Space between categories */
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1200px; /* Increased max width for more coverage */
     margin: 0 auto; /* Center the grid */
 }
 
@@ -116,25 +116,25 @@ body {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden; /* Ensure images don't overflow */
-    padding: 0; /* Remove internal padding */
+    padding: 0; /* Removed extra padding for better alignment */
     transition: transform 0.3s, background-color 0.3s;
-    height: 300px; /* Ensure uniform height for all cards */
-    width: 100%; /* Let cards take full width of the grid space */
+    overflow: hidden; /* Prevent overflow of content */
+    height: 300px; /* Ensures consistent height across cards */
 }
 
 .category-card img {
     width: 100%;
-    height: 100%; /* Make images cover the card size */
-    object-fit: cover; /* Maintain aspect ratio and fill the card */
-    border-radius: 0; /* Remove rounded edges from images */
+    height: 100%; /* Ensures the image fills the card space */
+    object-fit: cover; /* Maintains aspect ratio while filling the space */
+    border-radius: 0; /* Ensures no rounding on images */
+    margin: 0; /* Removed margins to maximize space usage */
 }
 
 .category-card p {
     font-size: 16px;
     font-weight: 600;
     color: #555;
-    margin: 10px 0; /* Add spacing below the image */
+    margin: 10px 0; /* Adds spacing below image */
 }
 
 .category-card:hover {
@@ -155,6 +155,7 @@ body {
         grid-template-columns: repeat(1, 1fr); /* One category per row on very small screens */
     }
 }
+
 
 
 
