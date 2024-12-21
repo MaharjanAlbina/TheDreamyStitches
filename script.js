@@ -1,22 +1,14 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
-// Show the popup after 5 seconds
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        const popup = document.querySelector('.popup');
-        if (popup) {
-            popup.style.display = 'block';
-        }
-    }, 5000);
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
 
     // Handle touch events for category cards
     const categoryCards = document.querySelectorAll('.category-card');
@@ -28,9 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Add the 'touched' class to the current card
             card.classList.add('touched');
+
+            // Show the popup
+            const popup = document.querySelector('.popup');
+            if (popup) {
+                popup.style.display = 'block';
+            }
         });
 
-        // Optionally, remove the 'touched' class on second tap
+        // Optionally, remove the 'touched' class on touchend
         card.addEventListener('touchend', () => {
             setTimeout(() => card.classList.remove('touched'), 1500);
         });
