@@ -10,27 +10,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Handle touch events for category cards
-    const categoryCards = document.querySelectorAll('.category-card');
-
-    categoryCards.forEach(card => {
-        card.addEventListener('touchstart', () => {
-            // Remove the 'touched' class from all cards
-            categoryCards.forEach(c => c.classList.remove('touched'));
-
-            // Add the 'touched' class to the current card
-            card.classList.add('touched');
-
-            // Show the popup
-            const popup = document.querySelector('.popup');
-            if (popup) {
-                popup.style.display = 'block';
+    document.addEventListener('DOMContentLoaded', () => {
+        // Select all category cards and the popup
+        const categoryCards = document.querySelectorAll('.category-card');
+        const popup = document.querySelector('.popup');
+    
+        categoryCards.forEach(card => {
+            card.addEventListener('touchstart', () => {
+                // Get the category title from the touched card
+                const categoryTitle = card.querySelector('.category-title').innerText;
+    
+                // Update the popup content with the category title
+                if (popup) {
+                    popup.querySelector('p').innerText = `You selected: ${categoryTitle}`;
+                    popup.style.display = 'block'; // Show the popup
+                }
+            });
+        });
+    
+        // Close the popup when touching outside of it
+        document.addEventListener('touchstart', (e) => {
+            if (popup && !popup.contains(e.target) && !e.target.closest('.category-card')) {
+                popup.style.display = 'none'; // Hide the popup
             }
         });
-
-        // Optionally, remove the 'touched' class on touchend
-        card.addEventListener('touchend', () => {
-            setTimeout(() => card.classList.remove('touched'), 1500);
-        });
     });
-});
+ 
+    
+    <script src="script.js"></script>
