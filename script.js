@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const handleCategorySelection = (event) => {
         const card = event.currentTarget;
         const categoryTitle = card.querySelector('.category-title').innerText;
-        alert(`You selected: ${categoryTitle}`);
     };
 
     // Attach event listeners to category cards
